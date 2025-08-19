@@ -5,5 +5,6 @@ from django.http import HttpResponse
 
 
 def index(request):
-    contexto = {"numero": 5}
+    contexto = {"anio": datetime.now().year}
+
     return render(request, "miapp/info.html", contexto )
